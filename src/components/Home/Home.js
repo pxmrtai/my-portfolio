@@ -8,13 +8,13 @@ function Home() {
       Hi! I am
       <div id="flip">
         <div>
-          <div>TAI</div>
+          <div>feeling great</div>
         </div>
         <div>
           <div>A Fullstack Developer</div>
         </div>
         <div>
-          <div>Handsome</div>
+          <div>TAI</div>
         </div>
       </div>
       <Link to="/contact" style={{ textDecoration: "none" }}>
