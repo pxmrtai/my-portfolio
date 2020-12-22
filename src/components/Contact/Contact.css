@@ -125,6 +125,10 @@ form > .btn {
   transition: 0.4s;
   outline: none;
 }
+form > .btn:hover{
+  background-color: #007bff;
+  color: white;
+}
 .contact_body{
   display: flex;
   justify-content: space-between;
