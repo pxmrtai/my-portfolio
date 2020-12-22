@@ -1,0 +1,287 @@
+.portfolio {
+  width: 100%;
+  height: 100%;
+  background-color: #212529 !important;
+}
+.portfolio__title {
+  position: relative;
+  margin-top: 0px;
+  height: 200px;
+  width: 100%;
+}
+
+.portfolio__brandTitle {
+  font-size: 100px;
+  font-weight: 900;
+  position: absolute;
+  color: #8e9a9d !important ;
+  left: 33%;
+  opacity: 0.3;
+}
+.portfolio__kmm {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  left: 44%;
+
+  margin-top: 50px;
+  padding: 5px;
+  border-bottom: 2px solid #007bff;
+}
+.container {
+  color: black;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.container .column {
+  width: 18%;
+  height: 43%;
+  float: left;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.container .column:last-child {
+  border-right: none;
+}
+.container .column .content {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.4s;
+}
+.container .column .content:hover {
+  margin-top: 50px;
+  transform: scale(1.5,1.5) ;
+  z-index: 1;
+}
+
+.container .column .content h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.5s;
+  /* opacity: 0; */
+  font-size: 3em;
+  margin: 0px;
+  padding: 0;
+  color: black;
+}
+.container .column .content h1.b1 {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBhV5BU3LeIVeBj3zkeZ0pNoDBxFOS-lM5KA&usqp=CAU");border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.container .column .content h1.b2 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/753px-Google_%22G%22_Logo.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .column .content h1.b3 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/300px-Facebook_icon_2013.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .column .content h1.b4 {
+  background: #4298f5;
+  color: white !important;
+  border-radius: 10px;
+}
+.container .column .content h1.b4 > p{
+  margin-top: 25px;
+}
+.container .column .content .box {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  transition: 0.4;
+  opacity: 0;
+}
+.container .column.active1 .content .box {
+  opacity: 1;
+  transition: 0.4s;
+}
+.container .column.active2 .content .box {
+  opacity: 1;
+  transition: 0.4s;
+}
+.container .column.active3 .content .box {
+  opacity: 1;
+  transition: 0.4s;
+}
+.container .column.active4 .content .box {
+  opacity: 1;
+  transition: 0.4s;
+}
+.container .column .bg {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.container .column .bg.bg1 {
+  background: url("../../img/amazon-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.6s;
+}
+.container .column.active1 .bg.bg1 {
+  background: url("../../img/amazon-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 1;
+  transition: 0.6s;
+}
+.container .column .bg.bg2 {
+  background: url("../../img/google-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0;
+
+  transition: 0.6s;
+}
+.container .column.active2 .bg.bg2 {
+  background: url("../../img/google-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 1;
+
+  transition: 0.6s;
+}
+.container .column.active .bg.bg3 {
+  background: url("../../img/fb-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.6s;
+}
+.container .column.active3 .bg.bg3 {
+  background: url("../../img/fb-clone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 1;
+  transition: 0.6s;
+}
+.container .column .bg.bg4 {
+  background: url("../../img/todo-app.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.6s;
+}
+.container .column.active4 .bg.bg4 {
+  background: url("../../img/todo-app.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 1;
+  transition: 0.6s;
+}
+input.input, .toggle{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  left: 10px;
+  outline: none;
+  z-index: 20;
+  cursor: pointer;
+}
+input.input{
+  opacity: 0;
+}
+.toggle{
+  pointer-events: none;
+  margin: auto;
+  border-radius: 50% ;
+  background: #007bff;
+  text-align: center;
+  transition: 0.4s;
+  line-height: 28px;
+  font-size: 24px;
+  box-shadow: 0 0 0 0px #007bff;
+
+}
+input.input:checked ~ .toggle{
+  box-shadow: 0 0 0 300px #212529;
+  transform: rotate(225deg);
+}
+.details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 21;
+  transform: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+.details > a{
+  pointer-events: visible;
+  transform: 0.5s;
+  padding: 10px;
+  background:none;
+  border: 1px solid #007bff;
+  padding: 5px 15px  ;
+  outline: none;
+  border-radius: 50px;
+  color: #007bff;
+  font-weight: 400;
+  
+}
+.details > a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+
+}
+.details > h2{
+  pointer-events: none;
+  transform: 0.5s;
+  color: white;
+
+}
+input:checked ~ .details{
+  opacity: 1;
+}

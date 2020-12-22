@@ -1,0 +1,195 @@
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: #343a40 !important;
+  /* display: flex;
+    flex-direction: column; */
+}
+.contact__title {
+  position: relative;
+  margin-top: 0px;
+  height: 200px;
+  width: 100%;
+}
+
+.contact__brandTitle {
+  font-size: 100px;
+  font-weight: 900;
+  position: absolute;
+  color: #8e9a9d !important ;
+  left: 36%;
+  opacity: 0.3;
+}
+.contact__kmm {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  left: 44%;
+
+  margin-top: 50px;
+  padding: 5px;
+  border-bottom: 2px solid #007bff;
+}
+
+/* BODY */
+.contact_body{
+  display: flex;
+  justify-content: space-evenly;
+}
+.email_form {
+  width: 500px;
+  padding: 30px;
+  height: 550px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .input-data {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 17px;
+  background-color: #343a40;
+  border-bottom: 2px solid silver;
+}
+.wrapper .input-data input.content-input {
+  border: 1px solid gray;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-30px);
+  font-size: 15px;
+  color: #007bff;
+  outline: none;
+  border: none;
+}
+.wrapper .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-weight: 400;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #007bff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+.email_content {
+  background-color: #343a40;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  height: 100px;
+  color: white;
+}
+.email_content[placeholder] {
+  font-size: 20px;
+}
+form > .btn {
+  margin: 30px 0px;
+  border-radius: 50px;
+  background: none;
+  border: 1px solid #007bff;
+  font-size: 20px;
+  color: #007bff;
+  padding: 10px 30px;
+  transition: 0.4s;
+  outline: none;
+}
+.contact_body{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact_bodyRight{
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.body_rightInfo{
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+}
+.contact_details{
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 20px !important;
+  border-bottom: 1px solid #007bff ;
+  margin-top: 10px;
+}
+.contact_details .logo{
+  width: 50px;
+}
+.contact_details:last-child .logo{
+  width: 100px;
+}
+.contact_details .logo .MuiSvgIcon-root{
+  font-size: 2.3rem !important;
+}
+.text-details{
+  margin-left: 10px;
+  padding: 10px;
+}
+.body_rightReferences{
+  margin-top: 40px;
+}
+.referent_details{
+  padding: 30px;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-top: 40px;
+}
+.referent_name{
+  font-size: 40px;
+  font-weight: 500;
+}
+.referent_position{
+  font-size: 25px;
+}
+.referent_email span,.referent_phone span {
+  font-size: 25px;
+  font-weight: 300;
+}
+.referent_email, .referent_phone{
+  font-size: 20px;
+}
+.email_form img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 50px;
+  margin-bottom: 50px
+}
+

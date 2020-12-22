@@ -1,0 +1,126 @@
+.skill {
+  width: 70%;
+  margin: 20px auto;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+.skills-bar {
+  width: 600px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  padding: 25px 30px;
+}
+.skills-bar .bar {
+  margin: 20px 0;
+}
+.skills-bar .bar:first-child {
+  margin-top: 0;
+}
+.skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+.skills-bar .bar .info span {
+  font-size: 17;
+  font-weight: 500;
+  opacity: 0;
+  color: white;
+  animation: showText 0.5s  linear forwards ;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+.skills-bar .bar .progress_line {
+  height: 10px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress_line span {
+  height: 100%;
+  position: absolute;
+  width: 80%;
+  background: #20c997 !important;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress_line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 0.5s linear forwards
+}
+.bar .progress_line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  background: #000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 0.5s linear forwards
+}
+@keyframes showText2{
+    100%{
+        opacity: 1;
+    }
+}
+.bar .progress_line.html span::after {
+  content: "80%";
+}
+.bar .progress_line.css span::after {
+  content: "80%";
+}
+.bar .progress_line.javascript span::after {
+  content: "65%";
+}
+.bar .progress_line.reactjs span::after {
+  content: "65%";
+}
+.bar .progress_line.nodejs span::after {
+  content: "50%";
+}
+.bar .progress_line.expressjs span::after {
+  content: "50%";
+}
+.bar .progress_line.html span {
+  width: 80%;
+}
+.bar .progress_line.css span {
+  width: 80%;
+}
+.bar .progress_line.javascript span {
+  width: 65%;
+}
+.bar .progress_line.reactjs span {
+  width: 65%;
+}
+.bar .progress_line.nodejs span {
+  width: 50%;
+}
+.bar .progress_line.expressjs span {
+  width: 50%;
+}
