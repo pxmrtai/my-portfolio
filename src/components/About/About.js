@@ -49,8 +49,7 @@ function About() {
                 {(props) => (
                   <div style={props}>
                     <p className="text">
-                      I help you build brand for your business at an affordable
-                      price. I am just new for this industry and I hope that I can be an Internship. I love spending time for coding because when I can find out solution of the problem, it was so greate
+                       I am just new for this industry and I hope that I can be an Internship. I want to have a working environment that I can learn and practice my coding skills. I love spending time for coding because when I can find out solution of the problem, it was so great.
                     </p>
                    
                     <p className="text">

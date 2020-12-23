@@ -34,7 +34,7 @@ function WhatIdo() {
             <h3 className="major">STUDY ABOARD IN AUSTRALIA</h3>
             <p className="school">Langports</p>
             <p className="text">
-              I went to Australia for studying english in 1 year
+              I went to Australia for studying English in 1 year
             </p>
           </div>
           <div className="resume__card">
@@ -70,18 +70,18 @@ function WhatIdo() {
               <br />
               - service customer.
               <br />
-              - training for new staff who work part-time .
+              - training for new staff who work part-time.
               <br />
               Achievements and skills gained:
               <br />
               - Be assessed positively by the bar’s boss: active, extremely
               adaptable...
               <br />
-              - Observe, learn and catch customers’ feeling.
+              - Gain customer service skills.
               <br />
-              - Improve English Communication Skill.
+              - Improve English communication skill.
               <br />
-              - faced with problems.
+              - Problem-solving skills.
               <br />
             </p>
           </div>
@@ -98,8 +98,20 @@ function WhatIdo() {
               <br />
               - sale tour to client, agency.
               <br />
-              Recognition and Gains:
-              <br />- all bikes and tours are operating a good way
+              Achievements and Gains:
+              <br />
+              - Working under pressure.
+              <br />
+
+              - Time management.
+              <br />
+
+              - Teamwork.
+              <br />
+
+              - Problem solving.
+              <br />
+              - Multi-tasking.
             </p>
           </div>
         </div>
