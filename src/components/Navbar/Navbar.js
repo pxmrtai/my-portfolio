@@ -32,9 +32,6 @@ function Navbar() {
       </div>
       <div className="navbar__options">
         <div className="navbar__option">
-          <a href="https://www.facebook.com/pxmrtai/" target="_blank" rel="noreferrer"><FacebookIcon /></a>
-        </div>
-        <div className="navbar__option">
         <a href="https://github.com/pxmrtai" target="_blank" rel="noreferrer"><GitHubIcon /></a>
 
         </div>

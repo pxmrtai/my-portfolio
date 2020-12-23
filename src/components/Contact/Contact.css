@@ -156,8 +156,6 @@ form > .btn:hover{
 .contact_details .logo{
   width: 50px;
 }
-.contact_details:last-child .logo{
-}
 .contact_details .logo .MuiSvgIcon-root{
   font-size: 2.3rem !important;
 }
